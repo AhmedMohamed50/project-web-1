@@ -1,0 +1,137 @@
+
+:root {
+    --margin-left: 4%;
+    --padding: 2%;
+    --padding-btns: 10px 20px;
+    --btn-background: rgb(5, 164, 221);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section.main {
+    height: 800px;
+    display: flex;
+}
+
+
+/* left section */
+section.main div.left {
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--margin-left);
+}
+
+section.main div.left div.logo-container {
+    flex: .3;
+    display: flex;
+    align-items: center;
+}
+
+/* section.main div.left div.logo-container img {
+    width: 30%;
+} */
+
+section.main div.left div.main-content {
+    flex: 1.5;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section.main div.left div.main-content h1 {
+    font-size: 50px;
+    flex: .2;
+}
+
+section.main div.left div.main-content p {
+    font-size: 20px;
+    flex: .2;
+}
+
+section.main div.left div.button {
+    flex: 1;
+}
+
+section.main div.left div.button .btn {
+    background-color: rgb(5, 164, 221);
+    border-radius: 10px;
+    padding: 16px 60px;
+    color: white;
+}
+
+/* end left section */
+
+
+/* Start right main section */
+
+section.main div.right {
+    background-color: var(--btn-background);
+    flex: 1;
+    background: url(../assests/images/img2.webp);
+    background-size: cover;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom-left-radius: 50px;
+}
+
+section.main div.right div.top {
+    height: 100px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+section.main div.right div.top nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+
+section.main div.right div.top nav li {
+    background-color: rgba(0, 0, 0, .1);
+    padding: var(--padding-btns);
+    border-radius: 6px;
+} 
+
+section.main div.right div.top button.sign {
+    background-color: var(--btn-background);
+    padding: var(--padding-btns);
+    border-radius: 10px;
+}
+
+section.main div.right div.bottom {
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    /* border-radius: 50px; */
+    /* background-color: black; */
+}
+
+section.main div.right div.bottom div.right-info {
+    width: 40%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 30px;
+    border-radius: 20px;
+}
+
+section.main div.right div.bottom div.right-info img.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* end right main section */
