@@ -1,6 +1,8 @@
 
 :root {
     --margin-left: 4%;
+    --margin-right: 8%;
+    --padding-left: 4%;
     --padding: 2%;
     --padding-btns: 10px 20px;
     --btn-background: rgb(5, 164, 221);
@@ -9,6 +11,10 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    height: 5000px;
 }
 
 section.main {
@@ -38,7 +44,6 @@ section.main div.left div.logo-container {
 
 section.main div.left div.main-content {
     flex: 1.5;
-    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,6 +58,7 @@ section.main div.left div.main-content h1 {
 section.main div.left div.main-content p {
     font-size: 20px;
     flex: .2;
+    width: 70%;
 }
 
 section.main div.left div.button {
@@ -135,3 +141,123 @@ section.main div.right div.bottom div.right-info img.avatar {
     object-fit: cover;
 }
 /* end right main section */
+
+/* i can use this method to make a distance between pages or by using margin */
+div.distance {
+    height: 150px;
+}
+
+/* start left featured house section */
+
+section.featured-houses {
+    margin-left: var(--margin-left);
+}
+
+section.featured-houses div.our-recommendation {
+    color: orange;
+}
+
+section.featured-houses div.our-recommendation::before {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: orange;
+    display: inline-block;
+}
+
+section.featured-houses div.featured-list-title {
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+section.featured-houses div.featured-list-title div.title {
+    font-size: 30px;
+    padding-left: var(--padding-left);
+}
+
+section.featured-houses div.featured-list-title div.list-features {
+    display: flex;
+    gap: 80px;
+    margin-right: var(--margin-right);
+}
+
+section.featured-houses div.featured-list-title div.list-features > button {
+    border: 2px;
+    padding: var(--padding-btns);
+    border-radius: 10px;
+}
+
+section.featured-houses div.featured-list-title div.list-features button.house-btn {
+    background-color: var(--btn-background);
+    border: 2px solid black;
+}
+
+section.featured-houses div.cart-container-list {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+section.featured-houses div.cart-container-list div.cart-container {
+    width: 500px;
+    height: 700px;
+    /* background-color: blue; */
+}
+
+section.featured-houses div.cart-container-list div.cart-container div.cart-image {
+    width: 500px;
+    height: 400px;
+    /* background-color: black; */
+    background: url(../assests/images/img3.jpg) center;
+    background-size: cover;
+    position: relative;
+}
+
+section.featured-houses div.cart-container-list div.cart-container div.cart-image button.btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: var(--padding-btns);
+    background-color: var(--btn-background);
+    border-radius: 10px;
+}
+
+section.featured-houses div.cart-container-list div.cart-container h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+section.featured-houses div.cart-container-list div.cart-container p.price {
+    font-size: 15px;
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+section.featured-houses div.cart-container-list div.cart-container p.des {
+    color: rgb(91, 91, 91);
+    width: 90%;
+    margin: 25px 0px;
+    line-height: 30px;
+}
+
+section.featured-houses div.cart-container-list div.cart-container div.author {
+    display: flex;
+    gap: 30px;
+    /* background-color: black; */
+}
+
+section.featured-houses div.cart-container-list div.cart-container div.author div.avatar{
+    background: url(../assests/images/avatar.webp) center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+section.featured-houses div.cart-container-list div.cart-container div.author div.name p.title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
