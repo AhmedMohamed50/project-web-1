@@ -147,7 +147,7 @@ div.distance {
     height: 150px;
 }
 
-/* start left featured house section */
+/* start featured house section */
 
 section.featured-houses {
     margin-left: var(--margin-left);
@@ -194,10 +194,11 @@ section.featured-houses div.featured-list-title div.list-features button.house-b
     border: 2px solid black;
 }
 
+/* cart creation */
 section.featured-houses div.cart-container-list {
     display: flex;
     justify-content: space-between;
-    
+    margin-right: 50px;
 }
 
 section.featured-houses div.cart-container-list div.cart-container {
